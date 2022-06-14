@@ -19,7 +19,7 @@ When the user first runs the program and there are not stored profiles in the Sh
 
 To retrieve a secret select a profile from the Local Profile dropdown and click Retrieve Secret.
 
-The Access Key ID and Secret Key ID display with copy buttons to the left.
+The Access Key ID and Secret Access Key display with copy buttons to the left.
 
 If these are new values the Update Local Profile wil update the profile in the Shared Profile File.
 
