@@ -21,7 +21,7 @@ To retrieve a secret select a profile from the Local Profile dropdown and click 
 
 The Access Key ID and Secret Access Key display with copy buttons to the left.
 
-If these are new values the Update Local Profile wil update the profile in the Shared Profile File.
+If these are new values the Update Local Profile button will update the profile in the Shared Profile File.
 
 
 Clicking New Local Profile allows the user to create additional profile. i.e. for different AWS Accounts.
@@ -34,5 +34,11 @@ An email is sent to the user informint them that new keys were generated and the
 When a key reaches 100 days old the Lambda function inactivates the old keys, then when the key is 110 days old they are delted.
 Between 90 days and 110 if the user has not access they new keys from Secrets Manager they receive an email prompting them to do so and warning that their old keys will be deactivated.
 
-Note: If you have multiple AWS Accounts and wish to keep al your secrets in one primary account update the Private variable SecretsArnString with the account number of your primary AWSAccount. I may change this to a configuration variable in the future but the idea is to make this simple for the end users. If you don't have visual studio to compile the project let me know and I can compile one with your AWS Accout number in it. If you only have one AWS Account you can replace this string with "{0}".
+When a user gets thier 1st access keys for an IAM account we place the new keys in a text file on an AWS S3 buckey and send the a Pre-Sign URL to that file that expires in 24 hours.
+
+Note: If you have multiple AWS Accounts and wish to keep all your secrets in one primary account update the Private variable SecretsArnString with the account number of your primary AWSAccount. I may change this to a configuration variable in the future but the idea is to make this simple for the end users. 
+
+If you don't have visual studio to compile the project let me know and I can compile one with your AWS Account number in it. 
+
+If you only have one AWS Account you can replace this string with "{0}".
 
