@@ -39,6 +39,9 @@ Partial Class Form1
 		Me.AccessKeyIdCopyButton = New System.Windows.Forms.Button()
 		Me.SecretKeyCopyButton = New System.Windows.Forms.Button()
 		Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+		Me.AboutLinkLabel = New System.Windows.Forms.LinkLabel()
+		Me.BackupProfilesButton = New System.Windows.Forms.Button()
+		Me.RestoreProfilesButton = New System.Windows.Forms.Button()
 		Me.SuspendLayout()
 		'
 		'ProfilesComboBox
@@ -184,11 +187,44 @@ Partial Class Form1
 		Me.ToolTip1.SetToolTip(Me.SecretKeyCopyButton, "Copy to Clipboard")
 		Me.SecretKeyCopyButton.UseVisualStyleBackColor = True
 		'
+		'AboutLinkLabel
+		'
+		Me.AboutLinkLabel.AutoSize = True
+		Me.AboutLinkLabel.Location = New System.Drawing.Point(648, 9)
+		Me.AboutLinkLabel.Name = "AboutLinkLabel"
+		Me.AboutLinkLabel.Size = New System.Drawing.Size(49, 15)
+		Me.AboutLinkLabel.TabIndex = 18
+		Me.AboutLinkLabel.TabStop = True
+		Me.AboutLinkLabel.Text = "About..."
+		'
+		'BackupProfilesButton
+		'
+		Me.BackupProfilesButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+		Me.BackupProfilesButton.Location = New System.Drawing.Point(187, 247)
+		Me.BackupProfilesButton.Name = "BackupProfilesButton"
+		Me.BackupProfilesButton.Size = New System.Drawing.Size(109, 23)
+		Me.BackupProfilesButton.TabIndex = 19
+		Me.BackupProfilesButton.Text = "Backup Profiles"
+		Me.BackupProfilesButton.UseVisualStyleBackColor = True
+		'
+		'RestoreProfilesButton
+		'
+		Me.RestoreProfilesButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+		Me.RestoreProfilesButton.Location = New System.Drawing.Point(302, 247)
+		Me.RestoreProfilesButton.Name = "RestoreProfilesButton"
+		Me.RestoreProfilesButton.Size = New System.Drawing.Size(109, 23)
+		Me.RestoreProfilesButton.TabIndex = 20
+		Me.RestoreProfilesButton.Text = "Restore Profiles"
+		Me.RestoreProfilesButton.UseVisualStyleBackColor = True
+		'
 		'Form1
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(723, 301)
+		Me.Controls.Add(Me.RestoreProfilesButton)
+		Me.Controls.Add(Me.BackupProfilesButton)
+		Me.Controls.Add(Me.AboutLinkLabel)
 		Me.Controls.Add(Me.SecretKeyCopyButton)
 		Me.Controls.Add(Me.AccessKeyIdCopyButton)
 		Me.Controls.Add(Me.NewLocalProfileButton)
@@ -225,4 +261,7 @@ Partial Class Form1
 	Friend WithEvents AccessKeyIdCopyButton As Button
 	Friend WithEvents SecretKeyCopyButton As Button
 	Friend WithEvents ToolTip1 As ToolTip
+	Friend WithEvents AboutLinkLabel As LinkLabel
+	Friend WithEvents BackupProfilesButton As Button
+	Friend WithEvents RestoreProfilesButton As Button
 End Class

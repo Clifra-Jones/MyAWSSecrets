@@ -38,7 +38,7 @@ Partial Class NoProfileDialog
 		Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
 		Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
 		Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-		Me.TableLayoutPanel1.Location = New System.Drawing.Point(257, 193)
+		Me.TableLayoutPanel1.Location = New System.Drawing.Point(257, 292)
 		Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
 		Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
 		Me.TableLayoutPanel1.RowCount = 1
@@ -73,7 +73,7 @@ Partial Class NoProfileDialog
 		Me.TextBox1.Multiline = True
 		Me.TextBox1.Name = "TextBox1"
 		Me.TextBox1.ReadOnly = True
-		Me.TextBox1.Size = New System.Drawing.Size(417, 162)
+		Me.TextBox1.Size = New System.Drawing.Size(417, 263)
 		Me.TextBox1.TabIndex = 1
 		Me.TextBox1.Text = resources.GetString("TextBox1.Text")
 		'
@@ -83,7 +83,7 @@ Partial Class NoProfileDialog
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.CancelButton = Me.Cancel_Button
-		Me.ClientSize = New System.Drawing.Size(441, 240)
+		Me.ClientSize = New System.Drawing.Size(441, 339)
 		Me.Controls.Add(Me.TextBox1)
 		Me.Controls.Add(Me.TableLayoutPanel1)
 		Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog

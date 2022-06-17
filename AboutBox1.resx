@@ -52,22 +52,15 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="TextBox1.Text" xml:space="preserve">
-    <value>There is no default local profile in the shared profiles file. You must setup a default profile to use this tool. The default profile is usually the 1st AWS account your were given. You can create additional profiles by clicking the Add Local Profiles button on the main form.
+  <data name="TextBoxDescription.Text" xml:space="preserve">
+    <value>Description :
 
-Your AWS Administrator should have given you your initial access keys when the account was created. If you don't have these access keys please contact your AWS Administrators
-
-To create your default profile, click OK or click cancel to close this warning.
-
-If this is a new computer and you have previously backup your profiles file click Cancel, and then restore your profile file.
-
-
-
-</value>
+(At runtime, the labels' text will be replaced with the application's assembly information.
+Customize the application's assembly information in the Application pane of Project Designer.)</value>
   </data>
 </root>

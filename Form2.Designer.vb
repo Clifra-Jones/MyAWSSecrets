@@ -154,6 +154,7 @@ Partial Class NewProfileForm
 		Me.MinimizeBox = False
 		Me.Name = "NewProfileForm"
 		Me.ShowInTaskbar = False
+		Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
 		Me.Text = "New Local Profile"
 		CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
